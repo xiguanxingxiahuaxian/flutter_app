@@ -39,5 +39,13 @@ samples, guidance on mobile development, and a full API reference.
  以上为建立第一个flutter项目的经过，详细请查看    https://flutterchina.club/get-started/codelab/ 
  官方的文档。
       
-  
+ 5 计时器示例
+    count.dart
+    
+ 6 路由示例
+    newrount.dart
      
+ 7 列表
+     second.dart
+    
+ 
