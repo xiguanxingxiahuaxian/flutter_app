@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Own.dart';
+import 'package:flutter_app/rount/BaseWidget.dart';
 void main() => runApp(MyApp());
 /**
  * 计时器
@@ -68,15 +69,9 @@ class MyHomepagestate extends State<HomePage> {
                 .textTheme
                 .display1
             ),
-            /*FlatButton(
-              onPressed: () {},
-              child: Text('FlatButton'),
-            ),*/
-            /*FlatButton(
-              onPressed: (){
-
-              }, child: null,
-            )*/
+            /**
+             * 添加路由 测试路由
+             */
             FlatButton(
                 onPressed: (){
                   Navigator.push(context,
@@ -85,7 +80,17 @@ class MyHomepagestate extends State<HomePage> {
                     })
                   );
                 },
-                child: new Text("go"))
+                child: new Text("go")),
+             FlatButton(
+               onPressed: (){
+                 Navigator.push(context,
+                     new MaterialPageRoute(builder:(context){
+                       return new baseWidget();
+                     })
+                 );
+               },
+               child: Text("base widget") ,
+             )
           ],
         ),
       ),
